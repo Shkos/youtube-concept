@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box; /* border-box говорит браузеру учитывать любые границы и внутренние отступы в значениях,
+     которые вы указываете в ширине и высоте элемента*/
+}
+body {
+    font-family: Arial, Helvetica, sans-serif; /*подгружаются по порядку если нет предидущего*/
+}
+.header {
+    display: flex;
+    align-items: center; /* выравнивает логотипы и кнопки друг с другом*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    padding-right: 70px;
+}
+.menu-button {
+    padding: 0;  /*отступ*/
+    display: flex; /*у блоков появилось свойство flex-контекст*/
+    flex-direction: column; /*выстроились в колону*/
+    justify-content: space-between; /*justify-content Отвечает за выравнивание элементов по главной оси
+    Space-between задаёт одинаковое расстояние между блоками*/
+    background-color: red;
+    width: 20px;
+    height: 17px;
+    border: none; /*без обводки*/
+    margin-right: 28px; /*отступ между кнопкой и лого*/
+    cursor: pointer;/*при наведении курсора - превращается в палец*/
+}
+.menu-line {
+    display: block; /* линия(блок) вместо текста*/
+    background: #1F2022;
+    width: 20px;
+    height: 3px;
+    border-radius: 20px; /* закругленные края*/
+}
+.logo {
+    margin-right: 60px;
+}
+.input-group {
+    background: #EBEBEB;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 17px;
+    max-width: 830px;
+    width: 50%;  /* при уменьшении браузера - уменьшается*/
+}
+.input-search {
+    background-color: transparent;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.button-search {
+    padding: 0;
+    width: 19px;
+    height: 19px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.icon-search {
+    fill: #000;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.icons-link {
+    text-decoration: none; /*убираем подчеркивание*/
+    opacity: 0.24; 
+}
+.icon-video:hover { /* изменение opacity при наведении */
+    opacity: 0.8; 
+} 
+.icons-link:not(:last-child) { /*not() все кроме последнего*/
+    margin-right: 50px;
+}
+.user {
+    margin-left: 45px;
+}
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

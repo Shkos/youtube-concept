@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyYotube</title>
+    <!--Заголовок-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Подключаем normalize - для кросбраузерности-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="hedear">
+        <!--hedear - это обычно шапка сайта.
+         class="hedear - что бы задать стили через точку - .header-->
+        <button class="menu-button">
+            <span class="menu-line"></span>
+            <!--три полоски-->
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+        <img src="img/logo.svg" alt="Youtube Logo" class="logo">
+        <!--src - откуда берем. alt- если не загрузится - будет текст. class - для стилей-->
+        <div class="input-group">
+            <!--div это прямоугольник-->
+            <input type="search" name="search" class="input-search" placeholder="Search">
+            <!--input type="search"  это именно поисковая строка-->
+            <!--краткую подсказку, которая описывает ожидаемое значение поля ввода-->
+            <button type="submit" class="button-search">
+                <!--"submit" ‒ «отправить») создаёт кнопку отправки данных формы-->
+                <svg class="icon-search" width="19" height="19">
+                    <use xlink:href="img/icons.svg#search"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="icons">
+            <a href="#" class="icons-link">
+                <!--тэг а - что бы иконки были кликабельные-->
+                <svg class=" icon icon-video" width="27" height="20">
+                    <use xlink:href="img/icons.svg#video"></use>
+                    <!--заходим в img/icons.svg и берем video-->
+
+                </svg>
+            </a>
+            <a href="#" class="icons-link">
+                <svg class="icon icon-apps" width="21" height="21">
+                    <use xlink:href="img/icons.svg#apps"></use>
+                </svg>
+            </a>
+            <!--comment-->
+            <a href="#" class="icons-link">
+                <svg class="icon icon-notification" width="22" height="26">
+                    <use xlink:href="img/icons.svg#notification"></use>
+                </svg>
+            </a>
+        </div>
+        <a href="#" class="user">
+            <img src="img/avatar.jpg" alt="Kostja" class="user-avatar">
+        </a>
+        <!-- /.user -->
+    </header>
+
+
+
+</body>
+
+</html>
