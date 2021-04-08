@@ -5,6 +5,8 @@
 body {
     /*font-family: Arial, Helvetica, sans-serif; подгружаются по порядку если нет предидущего*/
     font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 .header {
     display: flex;
@@ -14,6 +16,12 @@ body {
     padding-left: 32px;
     padding-right: 70px;
     margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
 }
 .menu-button {
     padding: 0;  /*отступ*/
@@ -92,7 +100,20 @@ body {
     border-radius: 50%; /* круглая*/
 }
 .sidebar {
+    width: 12%;
     padding-left: 32px;
+    position: fixed;
+    left: 0;
+    top: 114px;
+    height: calc(100% - 114px); /* меняется от размера браузера*/
+    overflow-y: auto; /* прокрутка контента*/
+    background-color: #fff;
+}
+.content {
+    width: 100%;
+    margin-top: 85px;
+    padding-left: 13%;
+    padding-top: 30px;
 }
 .nav-menu {
     margin-top: 0;
@@ -136,5 +157,97 @@ body {
     width: 20px;
     height: 20px;
     fill: #898989;
-
+}
+.channel {
+    position: relative;
+    margin-bottom: 49px;
+}
+.channel-title {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #19202C;
+    font-weight: bold;
+    font-style: 26px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+.channel-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.channel-text {
+    margin-left: 20px;
+}
+.video-card {
+    width: 250px;
+}
+.video-thumb {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;  /* не вылазит за пределы*/
+    background-repeat: 14px;
+    position: relative;
+}
+.thumbnail {
+    width: 250px;
+    height: 150px;
+    object-fit: cover; /*что быкартинка не меняла качество наверное*/
+}
+.video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    mix-blend-mode: normal;
+    background-repeat: 12px;
+    Font size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding: 3px 9px;
+}
+.video-title {
+font-size: 16px;
+line-height: 20px;
+line-height: 100%;
+color: #19202C;
+margin-top: 10px;
+margin-bottom: 4px;
+}
+.video-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: 13px;
+    line-height: 16;
+    color: #c2c2c2;
+}
+.video-counter {
+    display: flex;
+    
+}
+.video-views {
+    margin-right: 5px;
+}
+.video-views:after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #C2C2C2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.channel-button {
+    cursor: pointer;
+}
+.slider-buttons{
+    position: absolute;
+    right: 8px;
+    top: 15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
 }
