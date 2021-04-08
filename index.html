@@ -25,7 +25,7 @@
         <!--src - откуда берем. alt- если не загрузится - будет текст. class - для стилей-->
         <div class="input-group">
             <!--div это прямоугольник-->
-            <input type="search" name="search" class="input-search" placeholder="Search">
+            <input class="input-search" type="search" name="search" placeholder="Search">
             <!--input type="search"  это именно поисковая строка-->
             <!--краткую подсказку, которая описывает ожидаемое значение поля ввода-->
             <button type="submit" class="button-search">
@@ -47,6 +47,7 @@
             </a>
             <a href="#" class="icons-link">
                 <svg class="icon icon-apps" width="21" height="21">
+                    <!--задаем размеры в html что бы страница не прыгала-->
                     <use xlink:href="img/icons.svg#apps"></use>
                 </svg>
             </a>
@@ -58,10 +59,179 @@
             </a>
         </div>
         <a href="#" class="user">
+            <!-- # - заглушка, потом будет ссылка -->
             <img src="img/avatar.jpg" alt="Kostja" class="user-avatar">
         </a>
-        <!-- /.user -->
+        <!-- |c - добавляет коммент -->
     </header>
+    <div class="container">
+        <aside class="sidebar">
+            <!--<aside> представляет собой часть документа, чьё содержимое только косвенно связанно с основным содержимым документа. Чаще всего представлен в виде боковой панели, сносок или меток. -->
+            <nav class="nav">
+                <!-- <nav> определяет отдельную секцию документа -->
+                <ul class="nav-menu">
+                    <!-- ul - ненумерованный список -->
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-home" width="20" height="19">
+                                <use xlink:href="img/icons.svg#home"></use>
+                            </svg>
+                            <span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-tranding" width="20" height="19">
+                                <use xlink:href="img/icons.svg#tranding"></use>
+                            </svg>
+                            <span class="nav-text">Tranding</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-subscriptions" width="20" height="19">
+                                <use xlink:href="img/icons.svg#subscriptions"></use>
+                            </svg>
+                            <span class="nav-text">Subscriptions</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav-menu">
+                    <!-- ul - ненумерованный список -->
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-library" width="20" height="19">
+                                <use xlink:href="img/icons.svg#library"></use>
+                            </svg>
+                            <span class="nav-text">Library</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-history" width="20" height="19">
+                                <use xlink:href="img/icons.svg#history"></use>
+                            </svg>
+                            <span class="nav-text">History</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-WatchLater" width="20" height="19">
+                                <use xlink:href="img/icons.svg#WatchLater"></use>
+                            </svg>
+                            <span class="nav-text">Watch Later</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-favourites" width="20" height="19">
+                                <use xlink:href="img/icons.svg#favourites"></use>
+                            </svg>
+                            <span class="nav-text">Favourites</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-LikedVideos" width="20" height="19">
+                                <use xlink:href="img/icons.svg#LikedVideos"></use>
+                            </svg>
+                            <span class="nav-text">Liked Videos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-music" width="20" height="19">
+                                <use xlink:href="img/icons.svg#music"></use>
+                            </svg>
+                            <span class="nav-text">Music</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-games" width="20" height="19">
+                                <use xlink:href="img/icons.svg#games"></use>
+                            </svg>
+                            <span class="nav-text">Games</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-chevron-down" width="20" height="19">
+                                <use xlink:href="img/icons.svg#chevron-down"></use>
+                            </svg>
+                            <span class="nav-text">Show More</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <h2 class="nav-title">Subscriptions</h2>
+                <!--ul.nav-menu>li.nav-item*6>a.nav-link[href=#]>span.nav-text - короткая запись нижнего текста-->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="img/Sasha Narkosha.png" alt="photo" class="nav-image">
+                            <span class="nav-text">Sasha Narkosha</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="img/Misha Vialuy.png" alt="photo" class="nav-image">
+                            <span class="nav-text">Misha Vialuy</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="img/Katya VezdeEst.png" alt="photo" class="nav-image">
+                            <span class="nav-text">Katya VezdeEst</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="img/Kolya Monstr.png" alt="photo" class="nav-image">
+                            <span class="nav-text">Kolya Monstr</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="img/Olya Mouse.png" alt="photo" class="nav-image">
+                            <span class="nav-text">Olya Mouse</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="img/Vasya Gnom.png" alt="photo" class="nav-image">
+                            <span class="nav-text">Vasya Gnom</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-menu">
+                    <!-- ul - ненумерованный список -->
+                    <li class="nav-item">
+                        <!--li - list item -->
+                        <a href="#" class="nav-link">
+                            <svg class="icon icon-setting" width="20" height="19">
+                                <use xlink:href="img/icons.svg#setting"></use>
+                            </svg>
+                            <span class="nav-text">Setting</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <!-- /.container -->
 
 
 
